@@ -1,3 +1,7 @@
+data/video2.mp4
+# 이건 깃허브에 올릴때 제외한다는 뜻
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
