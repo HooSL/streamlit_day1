@@ -38,7 +38,7 @@ def main():
             #파일명 변경 후 저장
             image_file.name = 'test.jpg'
 
-            #파일명을 현재시간의 조합으로 해서 만들어보세요.
+            #파일명을 현재시간의 조합으로 해서 만들어보세요.(안겹치려고)
             #예) 현재시간.jpg
             current_time = datetime.now()
             print(current_time)
@@ -46,7 +46,7 @@ def main():
             current_time = current_time.isoformat().replace(':','_')
             image_file.name = current_time+'.jpg'
 
-            #파일을 저장할 수 있도록 위의 함수를 호출하자
+            #파일을 저장할 수 있도록 위의 함수를 호출하자 여길 주석처리하면 파일 저장을 하지 않는다.
             save_uploaded_file('temp',image_file)
 
             #파일을 화면에 나오게하기
