@@ -18,6 +18,7 @@ def main():
 
     st.help(range) # 그 함수의 설명을 보고싶을때
     st.help(sum)
+    
 
 if __name__ == '__main__':
     main()
