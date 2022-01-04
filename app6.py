@@ -1,6 +1,5 @@
-from google.protobuf import message
+# from google.protobuf import message
 import streamlit as st
-import pandas as pd
 
 def main():
     
@@ -38,7 +37,7 @@ def main():
     password = st.text_input('비밀번호 입력',type='password',max_chars=12)
     st.write(password)
 
-    #색딸 입력
+    #색깔 입력
     color = st.color_picker('색을 선택하세요')
     st.write(color)
 
