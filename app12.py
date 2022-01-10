@@ -38,7 +38,7 @@ def main():
 
     #스트림릿이 제공하는 bar 차트
     df_selected2 = df2[ ['sepal_length','petal_length'] ]
-    st.bar_chart(df_selected)
+    st.bar_chart(df_selected2)
 
     #Altair 이용
     #x 축과 y축 설정 + color 또는 size로 차트를 풍성하게 표현

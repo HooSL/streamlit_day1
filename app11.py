@@ -1,5 +1,4 @@
 import streamlit as st
-import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -31,10 +30,9 @@ def main():
     fig3 = plt.figure(figsize=(10,4))
     plt.subplot(1,2,1)
     plt.hist(data=df,x='sepal_length',bins=10,rwidth=0.8)
-
     plt.subplot(1,2,2)
     plt.hist(data=df,x='sepal_length',bins=20,rwidth=0.8)
-
+    st.pyplot(fig3)
 
     # species 컬럼에는 종 정보가 들어있는데 각 종별로 몇개씩 있는지를 차트로 나타내시오
     fig4 = plt.figure()
